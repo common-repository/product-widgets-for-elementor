@@ -1,0 +1,87 @@
+.miga_wc_elements_downloads .button {
+  margin-right: 20px !important;
+}
+
+ul.miga_wc_elements_products {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 1.1;
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  ul.miga_wc_elements_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 512px) {
+  ul.miga_wc_elements_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+ul.miga_wc_elements_products li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+ul.miga_wc_elements_products li .wc_product_categories a,
+ul.miga_wc_elements_products li .wc_product_categories {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+ul.miga_wc_elements_products li .wc_product_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul.miga_wc_elements_products li .wc_product_more {
+  margin-top: 20px;
+}
+
+.miga_wc_elements_products_pagination {
+  margin-top: 20px;
+}
+
+.miga_wc_elements_products_pagination .page-numbers {
+  display: inline-block;
+  padding: 10px 10px;
+  line-height: 1;
+  border: 1px solid #000;
+}
+
+.miga_wc_elements_products_pagination .page-numbers.current {
+  background-color: #000;
+  color: #fff;
+}
+
+.elementor-search-categories {
+  display: flex;
+  padding: 0 20px 20px;
+  justify-content: flex-end;
+}
+
+.elementor-search-categories .elementor-search-category {
+  background-color: var(--e-global-color-accent);
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 10px;
+  margin: 2px;
+}
+
+.miga_wc_elements_image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
